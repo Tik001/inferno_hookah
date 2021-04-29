@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: rgb(194, 63, 63);
+}
+.logo{
+    width: 100px;
+    height: 30px;
+    background:url(https://fanart.tv/fanart/movies/207932/hdmovielogo/inferno-57dd0ac8bbc94.png) no-repeat ;
+    background-size: 100%;
+}
+/* ----------------------------------Create------------------------------------ */
+.buttonCreate {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+  
+.buttonCreate span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.buttonCreate span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.buttonCreate:hover span {
+    padding-right: 25px;
+}
+  
+.buttonCreate:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+/* ------------------------TabakDive----------------------------- */
+#tabaksList{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.tabakDive{
+    border-radius: 30px;
+    margin-top: 15px;
+    width: 45%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('https://scontent-atl3-1.cdninstagram.com/v/t51.2885-15/e35/s320x320/101141211_243750960406271_7106316014276321363_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_cat=111&_nc_ohc=OBbXOUg4uhEAX9fZN2X&oh=caaf319fe3e3f0abc3d0c7321f377c66&oe=5F1BB735')no-repeat;
+    background-size: 100%;
+}
+.divDescr{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tabakName{
+    color: whitesmoke;
+}
+.tabakDescription{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    color: whitesmoke;
+}
+.divPhoto{
+    width: 70%;
+    height: 50%;
+}
+.tabakPhoto{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+.buttonDiv{
+    margin: 5px;
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonDiv button{
+    margin: 5px;
+}
+/* --------------------------deletTabak----------------------------------------- */
+
+.deletTabak {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #f00c0c;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 9px #999;
+}
+  
+.deletTabak:hover {background-color: #000000}
+  
+.deletTabak:active {
+    background-color: #30c72b;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+/* --------------------------editTabak----------------------------------------- */
+
+.editTabak {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #030303;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 9px #999;
+}
+  
+.editTabak:hover {background-color: #0fc918}
+  
+.editTabak:active {
+    background-color: #c73d2b;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+  /* --------------------------buttonSave----------------------------------------- */
+.buttonSave {
+    width: 150px;
+    height: 50px;
+    display: inline-block;
+    padding: .75em 1.25em;
+    border-radius: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 15px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: none;
+}
+.buttonSave:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0cf;
+    border-radius: 15px;
+    z-index: -2;
+}
+.buttonSave:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #008fb3;
+    transition: all .3s;
+    border-radius: 15px;
+    z-index: -1;
+}
+  .buttonSave:hover {
+    color: #fff;
+}
+.buttonSave:hover:before {
+    width: 100%;
+}
+  /* --------------------------------------------changeAndCreate----------------------------------------------*/
+#changeAndCreate{
+    width: 100%;
+    height: 100vh;
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    
+}
+label{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+input{
+    width: 70%;
+    height: 70px;
+    padding: 2px;
+    border-radius:  10px;
+    font-size: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: red;
+}
+#description{
+    width: 70%;
+    height: 70px;
+    padding: 2px;
+    border-radius:  10px;
+    font-size: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: red;
+}
+#add {
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(194, 63, 63);
+}
+#inputs{
+    width: 80%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1%;
+}
+#inputs > div > label{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#inputs > div{
+    width: 80%;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#add1{
+    display: none;
+}
+

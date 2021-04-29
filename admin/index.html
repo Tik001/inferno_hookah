@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabaks</title>
+</head>
+<body>
+  <section id="general">
+    
+      <header>
+        <div class="logo"></div>
+        <button class="buttonCreate" id="create" style="vertical-align:middle"><span>Create </span></button>
+      </header>
+    <section id="changeAndCreate">
+      
+      <div id="inputs">
+        
+      <div>
+        
+        <label for="tabakName">Tabak name</label> 
+        <input type="text"   placeholder="  Tabak Name"  id="tabakName">
+      
+      </div>
+      <div>
+
+        <label for="price">Description</label> 
+        <textarea rows="10" cols="45" placeholder="  Description" name="text" id="description"></textarea>
+        
+
+      </div>
+      <div>
+        
+        <label for="photo">Photo URL</label> 
+        <input type="text"   placeholder="  Photo"       id="photo">
+        
+      </div>
+      <div>
+        
+      </div>
+      <div class="editAndSave_Buttons">
+        <br>
+        <button id="add" class="buttonSave">Save</button>
+        <button id="add1" class="buttonSave">Edite</button>
+
+      </div>
+    </div>
+    </section>
+
+    <div id="tabaksList">
+
+    </div>
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------------------------------------------------------------------------------------------------------------------ -->
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBFnD2gJD35DV_hpsqZ6g2gZYwc1en785Y",
+    authDomain: "inferno-a4585.firebaseapp.com",
+    databaseURL: "https://inferno-a4585.firebaseio.com",
+    projectId: "inferno-a4585",
+    storageBucket: "inferno-a4585.appspot.com",
+    messagingSenderId: "375782909841",
+    appId: "1:375782909841:web:bbdbef1064a42f3e8b1c30"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="main.js" type="module"></script>
+</body>
+</html>
